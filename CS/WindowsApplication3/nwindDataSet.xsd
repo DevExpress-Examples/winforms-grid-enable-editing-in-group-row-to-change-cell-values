@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="nwindDataSet" targetNamespace="http://tempuri.org/nwindDataSet.xsd" xmlns:mstns="http://tempuri.org/nwindDataSet.xsd" xmlns="http://tempuri.org/nwindDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="nwindConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="nwindConnectionString (Settings)" PropertyReference="ApplicationSettings.DXSample.Properties.Settings.GlobalReference.Default.nwindConnectionString" Provider="System.Data.OleDb">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ProductsTableAdapter" GeneratorDataComponentClassName="ProductsTableAdapter" Name="Products" UserDataComponentName="ProductsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="nwindConnectionString (Settings)" DbObjectName="Products" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>SELECT ProductName, QuantityPerUnit, UnitPrice, UnitsInStock, UnitsOnOrder, Discontinued FROM Products</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ProductName" DataSetColumn="ProductName" />
+              <Mapping SourceColumn="QuantityPerUnit" DataSetColumn="QuantityPerUnit" />
+              <Mapping SourceColumn="UnitPrice" DataSetColumn="UnitPrice" />
+              <Mapping SourceColumn="UnitsInStock" DataSetColumn="UnitsInStock" />
+              <Mapping SourceColumn="UnitsOnOrder" DataSetColumn="UnitsOnOrder" />
+              <Mapping SourceColumn="Discontinued" DataSetColumn="Discontinued" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="nwindDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="nwindDataSet" msprop:Generator_DataSetName="nwindDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Products" msprop:Generator_UserTableName="Products" msprop:Generator_RowDeletedName="ProductsRowDeleted" msprop:Generator_RowChangedName="ProductsRowChanged" msprop:Generator_RowClassName="ProductsRow" msprop:Generator_RowChangingName="ProductsRowChanging" msprop:Generator_RowEvArgName="ProductsRowChangeEvent" msprop:Generator_RowEvHandlerName="ProductsRowChangeEventHandler" msprop:Generator_TableClassName="ProductsDataTable" msprop:Generator_TableVarName="tableProducts" msprop:Generator_RowDeletingName="ProductsRowDeleting" msprop:Generator_TablePropName="Products">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProductName" msprop:Generator_UserColumnName="ProductName" msprop:Generator_ColumnVarNameInTable="columnProductName" msprop:Generator_ColumnPropNameInRow="ProductName" msprop:Generator_ColumnPropNameInTable="ProductNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="QuantityPerUnit" msprop:Generator_UserColumnName="QuantityPerUnit" msprop:Generator_ColumnVarNameInTable="columnQuantityPerUnit" msprop:Generator_ColumnPropNameInRow="QuantityPerUnit" msprop:Generator_ColumnPropNameInTable="QuantityPerUnitColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UnitPrice" msprop:Generator_UserColumnName="UnitPrice" msprop:Generator_ColumnVarNameInTable="columnUnitPrice" msprop:Generator_ColumnPropNameInRow="UnitPrice" msprop:Generator_ColumnPropNameInTable="UnitPriceColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="UnitsInStock" msprop:Generator_UserColumnName="UnitsInStock" msprop:Generator_ColumnVarNameInTable="columnUnitsInStock" msprop:Generator_ColumnPropNameInRow="UnitsInStock" msprop:Generator_ColumnPropNameInTable="UnitsInStockColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="UnitsOnOrder" msprop:Generator_UserColumnName="UnitsOnOrder" msprop:Generator_ColumnVarNameInTable="columnUnitsOnOrder" msprop:Generator_ColumnPropNameInRow="UnitsOnOrder" msprop:Generator_ColumnPropNameInTable="UnitsOnOrderColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="Discontinued" msprop:Generator_UserColumnName="Discontinued" msprop:Generator_ColumnVarNameInTable="columnDiscontinued" msprop:Generator_ColumnPropNameInRow="Discontinued" msprop:Generator_ColumnPropNameInTable="DiscontinuedColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
