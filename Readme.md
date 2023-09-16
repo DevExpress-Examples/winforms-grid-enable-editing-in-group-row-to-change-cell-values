@@ -3,19 +3,24 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E3036)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
+
+# WinForms Data Grid - Display editors in a group row to edit cell values in the group 
+
+This example demonstrates how to display column editors in group rows. The user can use the editor to specify the same value for all cells in a column in a group.
+
+![](https://raw.githubusercontent.com/DevExpress-Examples/how-to-enable-editing-in-a-group-row-so-it-is-possible-to-change-child-cell-values-e3036/13.1.4%2B/media/winforms-grid-group-row-editors.png)
+
+You can also enable the `GroupEditProvider.ShowGroupEditorOnMouseHover` option to automatically invoke the group editor on mousehover.
+
+```csharp
+provider = new GroupEditProvider(gridView1);
+provider.ShowGroupEditorOnMouseHover = true;
+provider.SingleClick = true;
+provider.EnableGroupEditing();
+```
+
+
+## Files to Review
 
 * [GroupEditProvider.cs](./CS/WindowsApplication3/GroupEditProvider.cs) (VB: [GroupEditProvider.vb](./VB/WindowsApplication3/GroupEditProvider.vb))
 * [Main.cs](./CS/WindowsApplication3/Main.cs) (VB: [Main.vb](./VB/WindowsApplication3/Main.vb))
-* [Program.cs](./CS/WindowsApplication3/Program.cs) (VB: [Program.vb](./VB/WindowsApplication3/Program.vb))
-<!-- default file list end -->
-# How to enable editing in a group row so it is possible to change child cell values 
-
-
-<p>This example illustrates how to show an editor in a group row under a corresponding column. The editor corresponds to an in-place editor used in the column. </p><p>To invoke the group editor click the group row once or twice based upon the <strong>GroupEditProvider.SingleClick property</strong>. Then, you can enter any value in this editor. To apply this value to child cells and close the editor you should either press the <strong>Enter key</strong> or force the editor to lose focus. To discard changes press the<strong> Esc key</strong> when the group editor is active. <br />
-Also, you can provide  end-users with a visual effect pointing that he/she can invoke the group editor for a group row located under the mouse pointer. For this, enable the  <strong>GroupEditProvider.ShowGroupEditorOnMouseHover property</strong>.</p>
-
-<br/>
-
-
