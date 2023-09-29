@@ -10,7 +10,7 @@ This example demonstrates how to display column editors in group rows. The user 
 
 ![](https://raw.githubusercontent.com/DevExpress-Examples/how-to-enable-editing-in-a-group-row-so-it-is-possible-to-change-child-cell-values-e3036/13.1.4%2B/media/winforms-grid-group-row-editors.png)
 
-You can also enable the `GroupEditProvider.ShowGroupEditorOnMouseHover` option to automatically invoke the group editor on mousehover.
+You can also enable the `GroupEditProvider.ShowGroupEditorOnMouseHover` option to automatically invoke the group editor on mouse hover.
 
 ```csharp
 provider = new GroupEditProvider(gridView1);
