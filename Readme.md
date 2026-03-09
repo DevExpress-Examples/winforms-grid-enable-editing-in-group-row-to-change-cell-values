@@ -9,7 +9,7 @@
 
 This example demonstrates how to display column editors in group rows. The user can use the editor to specify the same value for all cells in a column in a group.
 
-![](https://raw.githubusercontent.com/DevExpress-Examples/how-to-enable-editing-in-a-group-row-so-it-is-possible-to-change-child-cell-values-e3036/13.1.4%2B/media/winforms-grid-group-row-editors.png)
+![WinForms Data Grid - Display editors in a group row to edit cell values in the group](media/winforms-grid-group-row-editors.png)
 
 You can also enable the `GroupEditProvider.ShowGroupEditorOnMouseHover` option to automatically invoke the group editor on mouse hover.
 
@@ -32,3 +32,4 @@ provider.EnableGroupEditing();
 
 (you will be redirected to DevExpress.com to submit your response)
 <!-- feedback end -->
+
